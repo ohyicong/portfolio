@@ -102,12 +102,6 @@
     var model = create_model(max_len,ALPHA_LEN);
     var status = "";
     function setup(){
-      //check device type
-      if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        alert("Unable to use on mobile devices.");
-        window.close();
-        return
-      }
       document.getElementById('file') 
       .addEventListener('change', function() { 
         var fr=new FileReader(); 
